@@ -156,18 +156,18 @@ FROM
 ## Configurar notificaciones de fraude basadas en alertas mediante Pub/Sub
 
 Para el almacenamiento temporal de nuevas transacciones, se despliega un PubSub topic y subscription.
-Vaya a PubSub console  y haga clic en Create Topic
-En la ventana de diálogo, ingrese el topic ID y haga clic en Create Topic.
-PubSub creará un nuevo tema y una nueva suscripción. Desplácese hacia abajo para verlo. Al mismo tiempo, puede crear una nueva suscripción usted mismo haciendo clic en Create Subscription.
+1. Vaya a PubSub console  y haga clic en Create Topic
+2. En la ventana de diálogo, ingrese el topic ID y haga clic en Create Topic.
+3. PubSub creará un nuevo tema y una nueva suscripción. Desplácese hacia abajo para verlo. Al mismo tiempo, puede crear una nueva suscripción usted mismo haciendo clic en Create Subscription.
 
 ## Conectar PubSub a BigQuery
 
 Deberá crear un trabajo de Dataflow para exportar datos a una tabla de BigQuery. Para ello, habilita primero la API de Dataflow.
-Vaya a APIs & Services dashboard.
-Click Enable APIs and Services.
-Busque la API de Dataflow mediante la barra de búsqueda y haga clic en Enable.
-Una vez que la API de Dataflow esté habilitada, vuelve a tu topic de PubSub y haz clic en Export to BigQuery. 
-Especifique los parámetros para crear un trabajo de Dataflow, en donde el template de Dataflow deberá ser PubSub Topic to BigQuery.
+1. Vaya a APIs & Services dashboard.
+2. Click Enable APIs and Services.
+3. Busque la API de Dataflow mediante la barra de búsqueda y haga clic en Enable.
+4. Una vez que la API de Dataflow esté habilitada, vuelve a tu topic de PubSub y haz clic en Export to BigQuery. 
+5. Especifique los parámetros para crear un trabajo de Dataflow, en donde el template de Dataflow deberá ser PubSub Topic to BigQuery.
 
 ## Simulador de transacciones online
 
